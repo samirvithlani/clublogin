@@ -18,7 +18,9 @@ export class MenuComponent implements OnInit {
       { title: 'login', link: 'login' },
       { title: 'detail', link: 'detail' },
       { title: 'parent', link: 'parent' },
-      { title: 'aboutus', link: 'aboutus' }
+      { title: 'aboutus', link: 'aboutus' },
+      { title: 'exdemo', link: 'exdemo' }
+
     ]
   }
 

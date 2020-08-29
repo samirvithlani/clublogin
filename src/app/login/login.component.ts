@@ -14,11 +14,16 @@ export class LoginComponent implements OnInit {
   userName:string="";
   userPassword:string="";
   flag:boolean;
+  res:any;
   submit(){
 
     //
 
-    this.flag = this.service.login();
+    this.service.login(this.userName,this.userPassword).subscribe(res=>{
+
+      this.res = res;
+      console.log(res)
+    })
     if(this.flag == true){
 
       localStorage.setItem("adminActive","true")
