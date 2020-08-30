@@ -7,20 +7,24 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  login(email,password) {
+  login(email, password) {
 
     //login  api ...  true false..
-    
-    return this.http.get('http://localhost:8080/employee/adminlogin/'+email);
+
+    return this.http.get('http://localhost:8080/employee/adminlogin/' + email);
 
 
   }
 
-  getData():Observable<any>{
+  getData(): Observable<any> {
 
     return this.http.get("http://localhost:8080/employee/viewEmployee");
   }
-  userName  = new Subject<any>();
+  getSeries(): Observable<any> {
+
+    return this.http.get("http://localhost:8080/seriesList")
+  }
+  userName = new Subject<any>();
 }

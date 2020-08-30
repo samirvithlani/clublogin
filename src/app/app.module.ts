@@ -16,6 +16,7 @@ import { App1Component } from './aboutus/app1/app1.component';
 import { ExdemoComponent } from './exdemo/exdemo.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorserviceService } from './errorservice.service';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ErrorserviceService } from './errorservice.service';
     AboutusComponent,
     App1Component,
     ExdemoComponent,
-    ErrorComponent
+    ErrorComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
