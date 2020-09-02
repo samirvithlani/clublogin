@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
     this.menuArray = [
       { title: 'login', link: 'login' },
       { title: 'detail', link: 'detail' },
-      { title: 'parent', link: 'parent' },
+      { title: 'parent1', link: 'parent' },
       { title: 'aboutus', link: 'aboutus' },
       { title: 'exdemo', link: 'exdemo' },
       { title: 'search', link: 'search' }
